@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping cart with local storage </title>
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <main>
+        <section>
+            <div>
+                <div class="card w-full flex justify-center items-center  bg-base-100 shadow-xl">
+                    
+                    <div class="card-body">
+                      <h2 class="card-title">Please add your proudct</h2>
+                     <div class="flex justify-center  items-center flex-col lg:flex-row gap-5">
+                        <input id="product-name" type="text" placeholder="product name" class="input input-bordered w-full max-w-xs" />
+                        <input id="product-quantaty" type="text" placeholder="product quantity" class="input input-bordered w-full max-w-xs" />
+                     </div>
+                      <div class="card-actions">
+                        <button id="button" onclick="handlebtn()" class="btn btn-primary">Add to cart</button>
+                      </div>
+                    </div>
+                    <div>
+                        <ul id="display">
+                          
+                        </ul>
+                    </div>
+                  </div>
+            </div>
+        </section>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
